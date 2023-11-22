@@ -30,6 +30,8 @@ class DatabaseSeeder extends Seeder
             'company_commission' => 5,
             'company_tax' => 6,
             'price_day' => 100,
+            'price_day_premium' => 0,
+            'kilo_price_premium' => 0,
         ]);
 
         $this->call([
@@ -55,8 +57,8 @@ class DatabaseSeeder extends Seeder
             CompanySupportSeeder::class,
             SubscriptionSeeder::class,
             AboutUsSeeder::class,
-            ConditionsSeeder::class,
-            PrivacySeeder::class,
+            //ConditionsSeeder::class,
+            //PrivacySeeder::class,
             HourSeeder::class,
             SubscriptionCaptionSeeder::class,
             BonusSeeder::class,

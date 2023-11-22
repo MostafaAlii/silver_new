@@ -103,5 +103,14 @@ Route::group(
         // Subscriptions ::
         Route::resource('subscriptions', Admin\SubscriptionController::class);
         Route::post('subscriptions/{subscriptionId}/update-status', [Admin\SubscriptionController::class, 'updateStatus'])->name('subscriptions.update-status');
+    
+        // Privacy ::
+        Route::controller(Admin\PrivacyController::class)->prefix('privacy')->as('privacy.')->group(function () {
+            Route::get('/', 'index')->name('index');
+            Route::post('update', 'update')->name('update');
+        });
+
+        // Hours and Days ::
+        Route::resource('hours', Admin\HourController::class);
     });
 });
