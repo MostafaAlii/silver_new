@@ -19,7 +19,7 @@ class PrivacySeeder extends Seeder
         DB::table('privacies')->truncate();
         Privacy::create([
             'notes'          =>  fake()->paragraph(),
-            'photo'         =>  fake()->imageUrl(),
+            //'image'         =>  fake()->imageUrl(),
         ]);
         Schema::enableForeignKeyConstraints();
     }

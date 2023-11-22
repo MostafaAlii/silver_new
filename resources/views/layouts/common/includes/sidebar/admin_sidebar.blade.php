@@ -237,6 +237,39 @@
                 </li>
                 <!-- End Admin Managment Menu-->
 
+                <!-- Start Hours and Days Managment Menu-->
+                <li class="pl-4 mt-10 mb-10 font-medium text-muted menu-title">Hours and Days</li>
+                <li>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#hour_and_day_managment">
+                        <div class="pull-left">
+                            <i class="ti-palette"></i>
+                            <span class="right-nav-text">Hours and Days</span></div>
+                        <div class="pull-right"><i class="ti-plus"></i></div>
+                        <div class="clearfix"></div>
+                    </a>
+                    <ul id="hour_and_day_managment" class="collapse" data-parent="#sidebarnav">
+                        <li><a href="{{route('hours.index')}}">Hours</a></li>
+                        <li><a href="{{--route('days.index')--}}">Days</a></li>
+                    </ul>
+                </li>
+                <!-- End Hours and Days Managment Menu-->
+                
+                <!-- Start CMS Managment Menu-->
+                <li class="pl-4 mt-10 mb-10 font-medium text-muted menu-title">CMS</li>
+                <li>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#cms_managment">
+                        <div class="pull-left">
+                            <i class="ti-palette"></i>
+                            <span class="right-nav-text">Privacy</span></div>
+                        <div class="pull-right"><i class="ti-plus"></i></div>
+                        <div class="clearfix"></div>
+                    </a>
+                    <ul id="cms_managment" class="collapse" data-parent="#sidebarnav">
+                        <li><a href="{{route('privacy.index')}}">Privacy</a></li>
+                    </ul>
+                </li>
+                <!-- End CMS Managment Menu-->
+
             </ul>
         </div>
     </div>

@@ -237,6 +237,41 @@
                             @enderror
                         </div>  
                         <!-- End Company Commission -->
+
+                        <!-- Start Kilo Meter Price -->
+                        <div class="col-lg-3">
+                            <label class="col-form-label" for="open_door">price day premium</label>
+                            <input type="number" value="{{ $setting?->price_day_premium }}" class="form-control" id="kilo_price" name="price_day_premium" placeholder="price day premium">
+                            @error('price_day_premium')
+                                <span class="text-danger" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>  
+                        <!-- End Kilo Meter Price -->
+
+                        <!-- Start Kilo Meter Price -->
+                        <div class="col-lg-3">
+                            <label class="col-form-label" for="open_door">kilo price premium</label>
+                            <input type="number" value="{{ $setting?->kilo_price_premium }}" class="form-control" id="kilo_price" name="kilo_price_premium" placeholder="kilo price premium">
+                            @error('kilo_price_premium')
+                                <span class="text-danger" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>  
+                        <!-- End Kilo Meter Price -->
+                        <!-- Start Kilo Meter Price -->
+                        <div class="col-lg-3">
+                            <label class="col-form-label" for="open_door">price day</label>
+                            <input type="number" value="{{ $setting?->price_day }}" class="form-control" id="price_day" name="price_day" placeholder="price day">
+                            @error('price_day')
+                                <span class="text-danger" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>  
+                        <!-- End Kilo Meter Price -->
                     </div>
                     <hr>
                     <div class="form-row">
